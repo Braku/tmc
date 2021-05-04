@@ -13,6 +13,6 @@
         </ul>
       </a>
     </li>
-    <li> <a href="#">PELICULAS</a> </li>
+    <li> <a href="acerca.php"> ACERCA DE </a> </li>
   </ul>
 </nav>

@@ -1,0 +1,64 @@
+.img_banner{
+  width: 70%;
+}
+
+.banner{
+  margin-top: 0;
+}
+
+.tit_pel{
+  position: absolute;
+}
+
+.contenedor {
+  border-radius: 10px;
+  margin-top: 10%;
+    width: 30%;
+    margin-left: 35%;
+}
+
+h3{
+  font-family: roboto;
+}
+
+.registro{
+  border-radius: 10px;
+  background-color: #EFEFEF;
+  padding: 1%;
+}
+
+label{
+  font-weight: 500;
+  margin-left: 7%;
+  float: left;
+  font-family: arial;
+}
+
+.input{
+  background-color: #EFEFEF;
+  border-color: rgb(66, 135, 147);
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
+  margin-right: 7%;
+  float: right;
+  width: 85%;
+}
+
+.submit {
+  background-color: rgb(66, 135, 147);
+  border: 0px;
+  margin-bottom: 1%;
+  padding: 2%;
+}
+
+button {
+  position: absolute;
+  border: 0px;
+  border-top-left-radius: 10px;
+  padding: 1%;
+}
+
+button:hover {
+  background-color: rgb(215, 215, 215);
+}
