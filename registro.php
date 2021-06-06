@@ -5,32 +5,14 @@
     <title></title>
   </head>
   <body>
-    <?php
-      $conexion=mysqli_connect("localhost","root","","tmc");
-      $nombre = $_POST['name'];
-      $apellido = $_POST['lname'];
-      $email = $_POST['mail'];
-      $contra = $_POST['pword'];
-
-
-
-      $consultaSQL="INSERT INTO users(name, last_name, mail, passw)
-        VALUES ('$nombre', '$apellido', '$email', '$contra')";
-        mysqli_query($conexion,$consultaSQL);
-        $query = "SELECT * FROM users WHERE mail = $email";
-        $resultado = mysqli_query($conexion, $query);
-        $filas = mysqli_num_rows($resultado);
-
-        if($filas>0) {
-          $data = mysqli_fetch_array($resultado);
-          echo' <script type="text/javascript">
-                  alert("Registro Completo");
-                </script>';
-        } else {
-            echo' <script type="text/javascript">
-                    alert("Registro incompleto");
-                  </script>';
-          }
-     ?>
+    <h3>Registrate</h3>
+    <form class="" action="signup.php" method="post">
+      <input type="text" name="usuario" value="" required> <br><br>
+      <input type="email" name="mail" value="" required><br><br>
+      <input type="password" name="contra" value="" required><br><br>
+      <input type="password" name="contra" value="" required><br><br>
+      <input type="submit" name="" value="Enviar">
+    </form>
+    <p>¿Ya tienes una cuenta? - <a href="login.php">Inicia sesion</a></p>
   </body>
 </html>

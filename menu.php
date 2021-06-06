@@ -3,7 +3,7 @@
     <li> <a href="index.php">INICIO</a> </li>
     <li> <a href="#">TENDENCIA</a> </li>
     <li class="cat">
-      <a href="cate.php">CATEGORIA
+      <a href="categoria.php">CATEGORIA
         <ul class="cats">
           <li> <a href="#"> ACCION </a> </li>
           <li> <a href="#"> COMEDIA </a> </li>
@@ -13,6 +13,5 @@
         </ul>
       </a>
     </li>
-    <li> <a href="acerca.php"> ACERCA DE </a> </li>
   </ul>
 </nav>

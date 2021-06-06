@@ -1,0 +1,59 @@
+.tablaRes {
+  background-color: rgba(227, 227, 227, 0.83);
+  border-radius: 10px;
+  border: 0px;
+  width: 80%;
+  margin: 1% auto;
+	display: block;
+}
+
+thead {
+  /* background-color: rgb(66, 135, 147); */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.btn-abrir-popup, th, td, .tr {
+  background-color: rgb(227, 227, 227, 0.83);
+  /* color: rgb(240, 240, 240); */
+  border: 0;
+  padding: 9px;
+}
+
+.btnTitulo {
+  margin-left: 10%;
+  padding: 8px;
+  background-color: rgb(231,231,231);
+  border: 0;
+}
+
+tbody {
+  width: 100%;
+}
+
+.btnAdd {
+  float: right;
+
+}
+
+.poster {
+  float: left;
+  position: inherit;
+}
+
+.title {
+
+}
+
+.content {
+  width: 80%;
+  height: 200px;
+ margin: 1% auto;
+}
+
+.comment {
+  background-color: rgb(231,231,231); 
+  float: right;
+  width: 70%;
+  margin: 1% auto;
+}
