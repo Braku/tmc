@@ -1,3 +1,15 @@
+<?php
+
+    session_start();
+
+    if(!isset($_SESSION['rol'])){
+        header('location: login.php');
+    }else{
+        if($_SESSION['rol'] != 1){
+            header('location: login.php');
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -11,7 +23,7 @@
   <body>
     <h1>THE MOVIES' CAVE</h1>
     <div class="vista">
-     <p> <a href="login.php" class="btnSession">Iniciar sesion</a> / <a href="#" class="btnSession">Reistrarse</a> </p>
+     <p> <a href="verResenia.php" class="btnSession">Administrar Reseñas</a> </p>
    </div>
     <?php include_once 'menu.php'; ?>
     <div class="vista">
@@ -62,9 +74,4 @@
 
     </div>
   </body>
-  <footer>
-    <div class="footer">
-      <center><h3>Derechos reservados</h3></center>
-    </div>
-  </footer>
 </html>

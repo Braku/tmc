@@ -64,7 +64,4 @@
     </div>
 
   </body>
-  <footer>
-      <h3>DERECHOS RESERVADOS</h3>
-  </footer>
 </html>

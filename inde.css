@@ -64,12 +64,14 @@ aside {
 
 .reciente {
   margin-top: 10%;
+  padding: 50px;
 }
 
 .pelicula {
   width:20%;
   background-color: rgb(218, 218, 218);
   display: inline-block;
+  margin: 50px;
 }
 
 .parrafo {

@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/inde.css">
+    
   </head>
   <body>
+
+      <h1>THE MOVIES' CAVE</h1>
     <?php include_once 'menu.php'; ?>
     <table title="Reseñas" class="tablaRes">
       <thead>
