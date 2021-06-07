@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
   <body>
-    <form class="" action="signup.php" method="post">
+    <form class="" action="consultas/signup.php" method="post">
       <a href="../" class='btnCerrar'> Regresar </a>
       <h2>Registrarte</h2>
       <p>Nombre de usuario: <br>

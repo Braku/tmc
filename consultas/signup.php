@@ -21,14 +21,15 @@
         $filas = $res->fetch_array();
 
         if($filas>0) {
-          header("location: registro.php");
           echo'<script type="text/javascript">
           alert("Registro incompleto, el correo ya esta registrado.");
           </script>';
+          header("location: ../registro.php");
+
         } else {
           $query="INSERT INTO usuarios(usuario, contra, mail, rol) VALUES('$usuario', '$contra', '$mail', 2)";
           $conexion->query($query);
-          header("location: index.php");
+          header("location: ../login.php");
           echo'<script type="text/javascript">
           alert("Registro exitoso.");
           </script>';
