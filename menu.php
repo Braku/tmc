@@ -1,7 +1,6 @@
 <nav class="nav">
   <ul>
     <li> <a href="index.php">INICIO</a> </li>
-    <li> <a href="#">TENDENCIA</a> </li>
     <li class="cat">
       <a href="categoria.php">RESEÑAS
         <!-- <ul class="cats">
