@@ -11,7 +11,7 @@
   <body>
     <h1>THE MOVIES' CAVE</h1>
     <div class="vista">
-     <p> <a href="login.php" class="btnSession">Iniciar sesion</a> / <a href="#" class="btnSession">Reistrarse</a> </p>
+     <p> <a href="login.php" class="btnSession">Iniciar sesion</a> / <a href="registro.php" class="btnSession">Reistrarse</a> </p>
    </div>
     <?php include_once 'menu.php'; ?>
     <div class="vista">

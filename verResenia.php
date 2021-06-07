@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/inde.css">
-    
+
   </head>
   <body>
 
@@ -39,8 +39,9 @@
             $numComments = mysqli_num_rows($resNum);
             echo("
             <tr class='row'>
-            <td width='82%'> <a href='' class='btnTitulo' id='btn-abrir-popup1'>".$datos['titulo']."</a> </td>
-            <td width='15%'> <a href='?'>".$numComments." comentarios </a> </td>
+            <td width='82%'> <a href='resenia.php?id= ".$datos['id']."' class='btnTitulo' id='btn-abrir-popup1'>".$datos['titulo']."</a> </td>
+            <td width='15%'> <p>".$numComments." comentarios </p> </td>
+            <td width='5%'> <a href = 'consultas/modifiar.php?titulo=".$datos['titulo']."&resenia".$datos['resenia']."'>Modificar</a> </td>
             <td width='5%'> <a href = 'consultas/eliminar.php?id=".$datos['id']."'>Eliminar</a> </td>
             </tr>
             ");

@@ -28,7 +28,7 @@
         } else {
           $query="INSERT INTO usuarios(usuario, contra, mail, rol) VALUES('$usuario', '$contra', '$mail', 2)";
           $conexion->query($query);
-          header("location: registro.php");
+          header("location: index.php");
           echo'<script type="text/javascript">
           alert("Registro exitoso.");
           </script>';
