@@ -42,17 +42,33 @@ tbody {
 }
 
 .title {
-
+  margin-left: 3%;
 }
 
 .content {
   width: 80%;
   height: 200px;
- margin: 1% auto;
+  margin: 1% auto;
+}
+
+.btnComment {
+  border: none;
+  background-color: rgb(66, 135, 147);
+  border-radius: 5px;
+  padding: 5px;
+  color:#ffffff;
+}
+
+.btnComment:hover {
+  background-color: #2e616a;
+
+}
+
+.comentario {
+  border-radius: 10px;
 }
 
 .comment {
-  background-color: rgb(231,231,231); 
   float: right;
   width: 70%;
   margin: 1% auto;

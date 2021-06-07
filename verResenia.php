@@ -91,4 +91,9 @@
     <script src="main.js" charset="utf-8"></script>
 
   </body>
+  <footer>
+    <div class="footer">
+      <h3>DERECHOS RESERVADOS</h3>
+    </div>
+  </footer>
 </html>

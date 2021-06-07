@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>The Movies' cave</title>
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/res.css">
   </head>
   <body>
         <?php include_once 'menu.php'; ?>
@@ -21,8 +22,8 @@
         $datos1 = $res1->fetch_array();
         echo ("
         <img src='".$datos1['foto']."' class='poster' height='300px' alt=''>
-        <h3 class='title'>".$datos['titulo']."</h3>
-        <p>".$datos['resenia']."</p>
+          <h3 class='title'>".$datos['titulo']."</h3>
+          <p class='title'>".$datos['resenia']."</p>
         ");
       }
 
@@ -30,9 +31,9 @@
       </div>
 
       <div class="comment">
-        <form class="" action="comentar.php?id='.$_GET['id'].'" method="post">
-          <textarea name="comment" rows="3" cols="80"></textarea>
-          <input type="submit" name="" value="Comentar">
+        <form class="" action="consultas/comentar.php?id='.$_GET['id'].'" method="post">
+          <textarea name="comment" rows="3" cols="80" class="comentario">Comentar...</textarea>
+          <input type="submit" name="" value="Comentar" class="btnComment">
         </form>
       ');
       ?>
@@ -51,10 +52,10 @@
           $numComments = mysqli_num_rows($resNum);
           echo("
           <tr class='row'>
-          ".
-          // <td width='82%'> <a href='' class='btnTitulo' id='btn-abrir-popup1'>".$datos['titulo']."</a> </td>
-          "
-          <td width='100%'> <p>".$datos['contenido']."</p> </td>
+            <td width='100%'>
+              <p>".$datos['contenido']."</p>
+              <p>".$datos['fecha']."</p>
+            </td>
           </tr>
           ");
         }
@@ -63,4 +64,7 @@
     </div>
 
   </body>
+  <footer>
+      <h3>DERECHOS RESERVADOS</h3>
+  </footer>
 </html>
