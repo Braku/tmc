@@ -1,31 +1,29 @@
-<table border="1" title="Reseñas">
-  <thead>
-    <tr>
-      <th colspan="2">Rese&ntilde;as</th>
-      <td> <button type="button" name="button" onclick="" id='btn-abrir-popup' class='btn-abrir-popup'> A&ntilde;adir </button> </td>
-    </tr>
-  </thead>
-  <tbody>
-    <?php
-    include_once 'conexion.php';
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Movies' cave</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+  <body>
+    <?php include_once 'menu.php'; ?>
+    <div class="vista">
+      <div class="intro">
+        <section>
+        </section>
+        <aside class="">
 
-    if(!$conexion){
-      die('error connecting to database');
-    } else{
-      $res = $conexion->query("SELECT * FROM posts");
+        </aside>
+      </div>
+      <div class="reciente">
+        <div class="pelicula">
+          <img src="" alt="">
+          <h5> <a href="#"></a> </h5>
+          <p> a </p>
+        </div>
+      </div>
 
-
-      //Ciclo que imprime tas reseñas en la tabla
-      while($datos=$res->fetch_array(MYSQLI_BOTH))
-      {
-        echo("
-        <tr>
-        <td> <button>".$datos['titulo']."</button> </td>
-        <td> <a href = 'resenia.php?id=".$datos['id']."'>".$datos['resenia']."</a> </td>
-        </tr>
-        ");
-      }
-    }
-    ?>
-  </tbody>
-</table>
+    </div>
+  </body>
+</html>

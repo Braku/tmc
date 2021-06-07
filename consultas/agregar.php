@@ -13,7 +13,7 @@
       $nom = $_REQUEST['titulo'];
       $banner = $_FILES['foto']['name'];
       $ruta = $_FILES['foto']['tmp_name'];
-      $destino = "banners/".$banner;
+      $destino = "../banners/".$banner;
       copy($ruta, $destino);
 
       include_once 'conexion.php';
@@ -34,7 +34,7 @@
           echo ("<script type='text/javascript'>
           alert('Reseña publicada.');
           </script>");
-          header("location: verResenia.php");
+          header("location: ../verResenia.php");
         } else {
           echo'<script type="text/javascript">
           alert("La reseña no se ha podido publicar.");

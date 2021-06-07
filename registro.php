@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
+    <title>The Movies' cave</title>
+</head>
   <body>
     <h3>Registrate</h3>
     <form class="" action="signup.php" method="post">

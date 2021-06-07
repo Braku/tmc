@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
+    <title>The Movies' cave</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
   </head>
   <body>
     <?php include_once 'menu.php'; ?>
@@ -18,7 +18,7 @@
       </thead>
       <tbody>
         <?php
-        include_once 'conexion.php';
+        include_once 'consultas/conexion.php';
 
         if(!$conexion){
           die('error connecting to database');
@@ -37,7 +37,7 @@
             <tr class='row'>
             <td width='82%'> <a href='' class='btnTitulo' id='btn-abrir-popup1'>".$datos['titulo']."</a> </td>
             <td width='15%'> <a href='?'>".$numComments." comentarios </a> </td>
-            <td width='5%'> <a href = 'eliminar.php?id=".$datos['id']."'>Eliminar</a> </td>
+            <td width='5%'> <a href = 'consultas/eliminar.php?id=".$datos['id']."'>Eliminar</a> </td>
             </tr>
             ");
           }
@@ -65,9 +65,9 @@
       <div class='overlay' id='overlay'>
         <!-- POPUP PARA AGREGAR UNA RESEÑA -->
         <div class='popup popup_resenia' id='popup'>
-          <a href="#" id='btnCerrar_popup' class='btnCerrar_popup'> Cerrar </a>
+          <a href="#" id='btnCerrar_popup' class='cerrar'> Cerrar </a>
           <h4 class='agregar'>A&ntilde;adir</h4>
-          <form class="" action='agregar.php' method='post' enctype="multipart/form-data">
+          <form class="" action='consultas/agregar.php' method='post' enctype="multipart/form-data">
             <div class='contenedor-items'>
               <label for="">Titulo de rese&ntilde;a: </label><br>
               <input type='text' name="titulo" value=''><br>

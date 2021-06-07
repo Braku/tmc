@@ -20,7 +20,7 @@
         $conexion->query($query1);
       }
 
-      header("location:verResenia.php");
+      header("location: ../verResenia.php");
     }
     ?>
   </body>

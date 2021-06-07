@@ -2,15 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Movies' cave</title>
+    <link rel="stylesheet" href="css/nav.css">
   </head>
   <body>
         <?php include_once 'menu.php'; ?>
     <div class="content">
       <?php
-      include_once 'conexion.php';
+      include_once 'consultas/conexion.php';
 
       if(!$conexion){
         die('error connecting to database');
@@ -39,14 +39,14 @@
       <table>
 
         <?php
-        $res = $conexion->query("SELECT * FROM comentarios");
+        $res = $conexion->query("SELECT * FROM comentarios WHERE id_post = ".$_GET['id']);
 
 
         //Ciclo que imprime tas reseñas en la tabla
         while($datos=$res->fetch_array(MYSQLI_BOTH))
         {
 
-          $resNum = $conexion->query("SELECT * FROM comentarios WHERE id_post = ".$datos['id']);
+          $resNum = $conexion->query("SELECT * FROM comentarios WHERE id_post = ".$_GET['id']);
           // Cuenta el numero de comentarios de cada reseña
           $numComments = mysqli_num_rows($resNum);
           echo("
