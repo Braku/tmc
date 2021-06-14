@@ -14,7 +14,7 @@
       $banner = $_FILES['foto']['name'];
       $ruta = $_FILES['foto']['tmp_name'];
       $destino = "../banners/".$banner;
-      copy($ruta, $destino);
+      copy($ruta, "../banners/");
 
       include_once 'conexion.php';
       if(!$conexion){
